@@ -1,5 +1,6 @@
 function rollAnim () {
     sides[randint(0, 5)].showImage(0)
+    basic.pause(50)
 }
 function createImages () {
     _1Side = images.createImage(`
@@ -11,9 +12,9 @@ function createImages () {
         `)
     _2Side = images.createImage(`
         . . . . .
+        . # . . .
         . . . . .
-        . # . # .
-        . . . . .
+        . . . # .
         . . . . .
         `)
     _3Side = images.createImage(`
@@ -54,8 +55,13 @@ function createImages () {
     ]
 }
 input.onGesture(Gesture.Shake, function () {
-	
+    chosenSide = randint(0, 5)
+    for (let index = 0; index < randint(8, 25); index++) {
+        rollAnim()
+    }
+    sides[chosenSide].showImage(0)
 })
+let chosenSide = 0
 let _6Side: Image = null
 let _5Side: Image = null
 let _4Side: Image = null
