@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="XS%A/)bzBG]4Ss`GPd$9">1Side</variable><variable id="ADT(W8s|0KT9!Bz,8tU}">2Side</variable><variable id="TO1etyX9{t#KYI%H{8t,">3Side</variable><variable id="RUR7a6M+.4Jp^p+DA]tG">4Side</variable><variable id="la%`M_.#a6bdK!A;U-xV">5Side</variable><variable id="79+aDWWkdn?Og`Mbm71s">6Side</variable><variable id="Li`F[_A!?h75OvOi0JJ,">list</variable><variable id="]Y^YM$sXTi;g6)KDU/zo">sides</variable><variable id="NS]rO9X$6(]dqKJ_-b_v">myImage</variable></variables><block type="pxt-on-start" id="RK7VbGQyP*[P(gF+`*ki" x="20" y="20"><statement name="HANDLER"><block type="function_call" id="YjMdFCA}ydLUFv]F0NC@"><mutation name="createImages" functionid="sb-y/`Y_sTOm4ubj:^+A"/></block></statement></block><block type="device_gesture_event" id="y1r2,Utbl#SsZ`G`%n==" x="298" y="20"><field name="NAME">Gesture.Shake</field></block><block type="function_definition" id="phI#r30sX$%9^FV|Y9Ta" collapsed="true" x="20" y="193"><mutation name="rollAnim" functionid=".N30V_TD.ivEl*iHIk3g"/><field name="function_name">rollAnim</field><statement name="STACK"><block type="device_show_image_offset" id=":EkRZcLDX~u{lPzd7e.:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="lists_index_get" id="ausn~YZ-{tQ_xZYyDGn;"><value name="LIST"><block type="variables_get" id="QCC#hn14k:@^77Gvj[.n"><field name="VAR" id="]Y^YM$sXTi;g6)KDU/zo">sides</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="5MmNW^$~L=vS5AFKS}.4"><value name="min"><shadow type="math_number" id="J0sN{~8gRqnQ09Y}oq@B"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="HTiliq7{=QWsg!XT0rH1"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="cYHRk0KzK!dFjxuLunFO"><field name="NUM">0</field></shadow></value></block></statement></block><block type="function_definition" id="B(Ydcg=-~d~QKvgp8=d_" collapsed="true" x="14" y="342"><mutation name="createImages" functionid="sb-y/`Y_sTOm4ubj:^+A"/><field name="function_name">createImages</field><statement name="STACK"><block type="variables_set" id="D[}|;QK;_y+.Lvlg#cVJ"><field name="VAR" id="XS%A/)bzBG]4Ss`GPd$9">1Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="hXAo?8!=wU-3k|3Vl91L"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><next><block type="variables_set" id="{Hyn]DVABw-?9eZY%po*"><field name="VAR" id="ADT(W8s|0KT9!Bz,8tU}">2Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="ZDuM}1BAWtBkx%RtFIH0"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><next><block type="variables_set" id="u}h0yP0]6Jl(?kW6j:LG"><field name="VAR" id="TO1etyX9{t#KYI%H{8t,">3Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id=".4jog5vSCH4T:y_MEG8O"><field name="LEDS">`
+        # . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . #
+        `</field></block></value><next><block type="variables_set" id="P{P)%de^lv84ONw]5L6m"><field name="VAR" id="RUR7a6M+.4Jp^p+DA]tG">4Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="xWEe):^fS%O(zFo/MA1J"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . . . .
+        `</field></block></value><next><block type="variables_set" id="[{.!zsUBw0#@(Mdg3E:/"><field name="VAR" id="la%`M_.#a6bdK!A;U-xV">5Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="kW^J[HyMggjSHQCIvEoU"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . #
+        `</field></block></value><next><block type="variables_set" id="vAybw3_0@z8H%xI_g|5-"><field name="VAR" id="79+aDWWkdn?Og`Mbm71s">6Side</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="[nE-=DTa)SUuEciJ!!m@"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # . # .
+        `</field></block></value><next><block type="variables_set" id="z66s0tXw_Nm-%:JpYt8("><field name="VAR" id="]Y^YM$sXTi;g6)KDU/zo">sides</field><value name="VALUE"><block type="lists_create_with" id="=BdVC2BE:GQR+~#b;HFo" inline="false"><mutation items="6" horizontalafter="3"/><value name="ADD0"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="Wld%Vtp|c7|Pm:)_F$42"><field name="VAR" id="XS%A/)bzBG]4Ss`GPd$9">1Side</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="variables_get" id="0%K6D!+JE/yLuse8D~6v"><field name="VAR" id="ADT(W8s|0KT9!Bz,8tU}">2Side</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="prAFE=$ml2.6Yf:e8Uoj"><field name="VAR" id="TO1etyX9{t#KYI%H{8t,">3Side</field></block></value><value name="ADD3"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="LX~IGh5RcsE(ao_r3wgX"><field name="VAR" id="RUR7a6M+.4Jp^p+DA]tG">4Side</field></block></value><value name="ADD4"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="PkN0;qno*7X-pomSOP,Z"><field name="VAR" id="la%`M_.#a6bdK!A;U-xV">5Side</field></block></value><value name="ADD5"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="W?0-V_=.ixr%*0q14xAH"><field name="VAR" id="79+aDWWkdn?Og`Mbm71s">6Side</field></block></value></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
